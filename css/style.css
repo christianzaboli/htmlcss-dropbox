@@ -18,6 +18,17 @@ h1{
     padding: 10px 15px;
     background-color: #0261FE;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    font-size: 30px;
+    
+}
+h5{
+    margin: 15px 0;
+}
 /* ------------------header */
 
 header{
@@ -52,10 +63,6 @@ header{
 .nav-right-blocks a{
     height: 100%;
     width: calc(100% / 3);
-}
-nav a{
-    text-decoration: none;
-    color: black;
 }
 nav a div{
     height: 100%;
@@ -121,55 +128,112 @@ nav a div{
 }
 
 /* ----------------------main */
-
+main{
+    background-color: white;
+}
 .container-main{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 .container-main h2{
     font-size: 30px;
-    padding: 50px 0;
+    padding: 110px 0 60px;
 }
 .piano-fatturazione{
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     gap: 35px;
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
 }
 .layout-tabella-piani{
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 50px;
 }
-.colonna-tabella-piani{;
+.colonna-tabella-piani{
     width: calc((100% / 3) - (100px / 3));
+    border: 1px solid black;
     display: flex;
     flex-flow: column nowrap;
+    flex-shrink: 0;
 }
 .tabella-piani{
-    height: 700px;
     position: relative;
-    border: 1px solid black;
-    padding: 30px;
+    padding: 50px 40px;
 }
 
 .colonna-tabella-piani .titolo-piano{
     display: block;
     padding: 15px;
     width: 100%;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     text-align: center;
+}
+.riga-tabella-piani{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.riga-tabella-piani .titolo-piano {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.riga-piani{    
+    height: 263px;
+    position: relative;
+    padding: 50px 40px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* -----------contenuto piani */
+
+.graytext{
+    color: gray;
+}
+.layout-tabella-piani .button{
+    text-align: center;
+    display: block;
+    margin: 0 0 40px;
+}
+.aquista-ora{
+    color: blue;
+    text-decoration: underline;
+    display: inline-block;
+}
+ul{
+    list-style-type: none;
+    margin: 65px 0;
+}
+.secondlist{
+    margin-top: 30px;
+}
+li{
+    margin: 15px 0;
+}
+.secondlist i{
+    color: blue;
+}
+.undeline-oppure{
+    display: inline-block;
+    text-align: start;
+    height: 55px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.riga-piani h5{
+    margin: 15px 0 45px;
 }
 
 
-
-
-
-
-/* -------------------debug */
-/* .debug header{
+ /* -------------------debug */
+.debug header{
     background-color: lightgray;
 }
 .debug nav{
@@ -179,16 +243,16 @@ nav a div{
     border: 1.2px dotted red;
 }
 .debug main .jumbo{
-    background-color: rgb(167, 255, 255); */
-}
-.debug .container-main{
-    background-color: beige;
-}
+    background-color: rgb(167, 255, 255); 
+}  */
 .debug .layout-tabella-piani{
     background-color: rgb(84, 135, 125);
 }
 .debug .tabella-piani{
     background-color: #9bd7ff;
+} */
+.debug .container-main{
+    background-color: beige;
 }
 .debug .contenuto-piani{
     width: 100%;
