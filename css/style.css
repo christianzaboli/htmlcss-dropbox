@@ -9,15 +9,23 @@ body{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 78px;
     font-weight: bold;
+}
+.button{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #0261FE;
 }
 /* ------------------header */
 
 header{
+    background-color: white;
     height: 80px;
     width: 100%;
     position: sticky;
+    z-index: 100;
     top: 0;
     display: flex;
     flex-wrap: nowrap;
@@ -32,37 +40,84 @@ header{
 }
 .nav-right-blocks{
     height: 100%;
-    width: 25%;
+    width: 35%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.nav-left-blocks div{
+.nav-left-blocks a{
     height: 100%;
     width: calc(100% / 4);
 }
-.nav-right-blocks div{
+.nav-right-blocks a{
     height: 100%;
     width: calc(100% / 3);
 }
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a div{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.link-logo-nav{
+    background-image: url(../img/logo-small.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
 
 /* -------------------jumbotron */
 
 .jumbo{
     height: 700px;
     width: 100%;
+    background-color: #B4D0E7;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .container-jumbo{
-    height: 400px;
-    width: 85%;
+    height: 600px;
+    width: 70%;
     margin: 0 auto;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
-    align-content: flex-start;
+}
+.jumbocontent{
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.textjumbo p{
+    margin-bottom: 45px;
+}
+.textjumbo span{
+    display: block;
+    margin: 45px 0;
+}
+.textjumbo i{
+    font-size: 40px;
+    color: black;
+}
+
+.jumboimg{
+    height: 100%;
+    width: 38%;
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 861px;
+    top: 443px;
 }
 
 /* ----------------------main */
@@ -114,20 +169,17 @@ header{
 
 
 /* -------------------debug */
-.debug header{
+/* .debug header{
     background-color: lightgray;
 }
 .debug nav{
     background-color: rgb(213, 148, 148);
 }
-.debug nav{
-    background-color: rgb(213, 148, 148);
-}
-.debug nav div{
+.debug nav a{
     border: 1.2px dotted red;
 }
 .debug main .jumbo{
-    background-color: rgb(167, 255, 255);
+    background-color: rgb(167, 255, 255); */
 }
 .debug .container-main{
     background-color: beige;
