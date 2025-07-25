@@ -72,6 +72,13 @@ header{
     height: 100%;
     width: calc(100% / 3);
 }
+nav .button{
+    margin: 0 20px 0 0;
+    align-self: center;
+    height: max-content;
+    width: max-content;
+
+}
 nav a div{
     height: 100%;
     width: 100%;
@@ -79,7 +86,6 @@ nav a div{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .link-logo-nav{
     background-image: url(../img/logo-small.png);
@@ -161,7 +167,7 @@ main{
 }
 .colonna-tabella-piani{
     width: calc((100% / 3) - (100px / 3));
-    border: 1px solid black;
+    border: 1px solid #cbcbcb;
     display: flex;
     flex-flow: column nowrap;
     flex-shrink: 0;
@@ -175,12 +181,12 @@ main{
     display: block;
     padding: 15px;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #cbcbcb;
     text-align: center;
 }
 .riga-tabella-piani{
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid #cbcbcb;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -188,7 +194,7 @@ main{
     display: block;
     padding: 15px;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #cbcbcb;
     text-align: center;
 }
 .riga-piani{    
