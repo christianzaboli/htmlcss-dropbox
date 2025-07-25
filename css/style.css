@@ -205,7 +205,7 @@ main{
     display: block;
     margin: 0 0 40px;
 }
-.aquista-ora{
+.default-a{
     color: blue;
     text-decoration: underline;
     display: inline-block;
@@ -281,6 +281,48 @@ li{
     width: 100%;
 }
 
+
+/* --------------footer */
+
+footer{
+    margin-top: 180px;
+    width: 100%;
+    height: 570px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-footer{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footer-links{
+    width: calc(100% / 5);
+}
+footer a{
+    color: white;
+}
+footer ul{
+    margin: 0;
+}
+footer p{
+    color: gray;
+}
+.container-70{
+    width: 70%;
+    margin: 0 auto;
+}
+.divisore-footer{
+    height: 1px;
+    width: 120px;
+    background-color: white;
+    margin: 112px 0 50px 0;
+}
  /* -------------------debug */
 .debug header{
     background-color: lightgray;
