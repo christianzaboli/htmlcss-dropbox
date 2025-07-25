@@ -14,6 +14,12 @@ body{
     padding: 10px 15px;
     background-color: #0261FE;
 }
+.white-button{
+    width: max-content;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
 a{
     text-decoration: none;
     color: black;
@@ -221,7 +227,7 @@ li{
     margin: 15px 0;
 }
 .secondlist i{
-    color: blue;
+    color: #1260D5;
 }
 .undeline-oppure{
     display: inline-block;
